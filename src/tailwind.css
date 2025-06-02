@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@layer utilities{
+    .no-scrollbar{
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .no-scrollbar::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+.item{
+    @apply flex flex-col gap-3 justify-start items-start bg-gray-200 rounded-[5px] p-15 w-[300px] h-[300px] overflow-auto
+}
+
+#delbutton{
+    @apply bg-red-500 text-white rounded-[5px] w-28 mt-5 cursor-pointer
+}
+
+a{
+    @apply hover:text-blue-300 cursor-pointer
+}
+
+/* vanilla css */
