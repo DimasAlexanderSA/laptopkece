@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LaptopKece</title>
+    <script type="module" crossorigin src="/assets/index-uDk3ds_v.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BUpKzhVk.css">
+  </head>
+  <body class="flex flex-col items-center">
+    <nav class="sticky top-0 flex flex-col items-center w-screen text-white bg-red-900 h-[120px] z-10">
+      <h1 class="text-[25px] mt-4 font-bold">Laptop Kece</h1>
+      <ul class="flex gap-10 my-5">
+        <li><a>Beranda</a></li>
+        <li><a>Produk</a></li>
+        <li><a>Kontak</a></li>
+      </ul>
+    </nav>
+    <main class="flex flex-col relative w-1/2 mt-[30px]">
+        <div class="flex ">
+          <img src="/assets/laptopKece-Dsgn1YVh.jpg" class="h-44">
+          <div class="flex flex-col items-center w-3/4">
+            <h1 class="text-[25px] font-bold">Laptop Terkece - YYBOOK X</h1>
+            <p class="my-2">Ringan , cepat, dan buatan anak bangsa</p>
+            <button id="detail" class="bg-blue-600 text-white w-40 rounded-[5px] cursor-pointer"> Lihat Detail </button>
+            <div id="spec" class="mt-3 hidden">
+              <p>Spesifikasi : RAM 8GB , SSD 512GB, Layar 14" <br> <p> Harga : Rp 5.500.000 </p>
+            </div>
+          </div>
+        </div>
+        
+        <div id="outputdiv" class="flex flex-wrap gap-5 mt-20"></div>
+        
+        <div class="flex flex-col items-center mt-5 gap-1 mb-[80px]">
+          <h1 class="font-bold text-[20px] mb-5"> Tambah Produk Baru </h1>
+          <input class="inp w-1/2 border-black border-1" type="text" placeholder="Nama Produk">
+          <div class="flex gap-1 w-1/2">
+            <input id="numberOnly" class="inp w-[70%] border-black border-1" type="number" placeholder="Harga">
+              <select id="currency" class="border-black border-1 w-[30%]">
+                <option value="" selected disabled>Mata Uang</option>
+                <option value="idr"> Rupiah </option>
+                <option value="usd"> US Dolar </option>
+                <option value="eur"> Euro </option>
+                <option value="jpy"> Yen </option>
+                <option value="gbp"> Pound </option>
+                <option value="krw"> Won </option>
+              </select>
+          </div>
+          <textarea class="inp w-1/2 border-black border-1" placeholder="Deskripsi"></textarea>
+          <button id="addProduct" class="mt-2 bg-blue-600 text-white cursor-pointer rounded-[5px] w-36"> Tambah Produk </button>
+        </div>
+      </main>
+    <footer class="fixed bottom-0 flex justify-center items-center w-screen bg-red-900 h-[60px]">
+      <p class="text-center text-white">© 2025 LaptopKece. Dibuat oleh orang rahasia</p>
+    </footer>
+
+
+  </body>
+</html>
